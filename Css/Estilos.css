@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    background: #897766;
+}
+header{
+    background-color: #FDCAE1;
+    color: black;
+    justify-items: center;
+}
+.ancho{
+    width: 80%;
+    height: 70px;
+    margin: auto;
+}
+.logo{
+    width: 30%;
+    height: 70px;
+    float: left;
+    padding-top: -30px;
+    box-sizing: border-box;
+}
+.logo p a{
+    color: black;
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    justify-content: center;
+}
+
+nav{
+    width: 70%;
+    height: 70px;
+    float: left;
+    text-align: right;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+/*aca resaltamos el menu navegador, cuando pase el puntero del mouse se vea en color blanco*/
+nav ul li a:hover{
+color: white;
+}
+@font-face{
+    font-family: Tillana;
+    src: url(../Fuentes/Tillana-Medium.ttf)
+}
+/*La foto de inicio, es provisoria, en futuro quiero poner fotos aleatorias*/
+.foto_inicio{
+    background-size:cover;
+    display: block;
+}
+footer{
+    background: #FDCAE1;
+    height: auto;
+    width: 100;
+    font-family: Tillana;
+    padding-top: 40px;
+    color: black;
+    display: flex;
+    display: inline-block;
+}
+.SocialLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.SocialLinks h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.Redes{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.Redes li{
+    margin: 0 10px;
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+.Redes li a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.Redes li a i:hover{
+    color: aqua;
+}
+.OuterFooter{
+    background: black;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.OuterFooter p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: white;
+}
+.OuterFooter span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+/*Productos*/
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.productos-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+.productos__item{
+    position: relative;
+}
+.galeria__foto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nombre__foto{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1));
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+/*Recetas*/
+.titulo-receta{
+    display: flex;
+    justify-content: center;
+    transform: perspective( 0,0,0,1);
+}
+.cupcakes_foto{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    position: relative;
+}
+#procedimiento{
+    display: grid;
+    grid-template-columns: 50% 50%;   
+}
+.item__uno{
+    color: white;
+    font-size: 18px;
+    display: flex;
+}
+/*Quienes Somos*/
+.titulo__quienessomos{
+    display: flex;
+    justify-content: center;
+}
+.foto__quienes__somos{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    position: relative;
+}
+/*Contacto*/
+form{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #FDCAE1;
+    width: 700px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+.titulo__contacto{
+    display: flex;
+    justify-content: center;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#boton__formulario{
+    background: black;
+    color: white;
+    border-radius: 10px;
+}
+#boton__formulario:hover{
+    cursor: pointer;
+}
+.terminos{
+    display: flex;
+    text-align: center;
+}
+.genero{
+    display: flex;
+    text-align: center;
+    letter-spacing: 1px;
+}
+#checkbox:hover{
+    cursor: pointer;
+}
+#checkbox:hover{
+    cursor: pointer;
+}
+
