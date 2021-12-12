@@ -1,21 +1,40 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.container-fluid h1, a{
+    position: absolute;
+}
+.container-fluid h1{
+    color: white    ;
+    font-size: 60px;
+    bottom: 55%;
+    right: 32%;
+}
+.container-fluid a{
+    font-size: 30px;
+    bottom: 45%;
+    right: 38%;
+}
+.div__img{
+    object-fit: cover;
+}
+
+
+/*
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
-body{
-    background-image: url(../Imagenes/dessert-g846e8985f_1920.jpg);
-    background-size: 100% 900px;
-    background-repeat: no-repeat;
-}
-.section__header{
+
+.container{
     font-family: Georgia, 'Times New Roman', Times, sans-serif;
     color: white;
-    font-size: 35px;
+    font-size: 50px;
     display: flex;
     position: absolute;
-    bottom: 65%;
-    right: 33%;
+    bottom: 55%;
+    left: 43%;
 }
 
 .div__button a{
@@ -27,8 +46,8 @@ body{
     box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
     animation: pulse 1.5s infinite;
     position: absolute;
-    right: 38%;
-    bottom: 45%;
+    right: 42%;
+    bottom: 40%;
     color: white;
     font-size: 25px;
     text-decoration: none;
@@ -49,7 +68,6 @@ body{
     }
 }
 
-/*Responsive desing*/
 @media screen and (max-width: 525px){
     .section__header{
         font-size: 30px;
@@ -80,3 +98,4 @@ body{
         font-size: 05px;
     }
 }
+*/
