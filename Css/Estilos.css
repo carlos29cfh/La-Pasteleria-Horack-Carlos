@@ -298,16 +298,21 @@ footer{
     left: 20%;
 }
 /*Quienes Somos*/
-.titulo__quienessomos{
-    display: flex;
-    justify-content: center;
-}
-.foto__quienes__somos{
-    width: 100%;
-    height: 700px;
-    object-fit: cover;
+.container__quienessomos img{
+    display: inline-block;
     position: relative;
 }
+.container__quienessomos h1{
+    position: absolute;
+    top: 20%;
+    left: 70px;
+}
+.container__quienessomos figcaption{
+    position: absolute;
+    top: 40%;
+    left: 70px;
+}
+
 /*Contacto*/
 .div__fondo{
     background-image: url(../Imagenes/jessica-loaiza-DHYfjAe_eeo-unsplash.jpg);
