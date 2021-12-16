@@ -4,6 +4,7 @@ body{
 }
 .container-fluid h1, a{
     position: absolute;
+    overflow: hidden;
 }
 .container-fluid h1{
     color: white;
@@ -19,9 +20,25 @@ body{
 .div__img{
     width: 100%;
     object-fit: cover;
+    overflow: hidden;
+}
+@media screen and (min-widht: 768px) and (max-width: 940px){
+    .container-fluid h1{
+        font-size: 50px;
+    }
+    .container-fluid a{
+        font-size: 20px;
+    }
 }
 
-
+@media screen and (min-widht: 400px) and (max-width: 767px){
+    .container-fluid h1{
+        font-size: 30px;
+    }
+    .container-fluid a{
+        font-size: 10px;
+    }
+}
 /*
 *{
     padding: 0;

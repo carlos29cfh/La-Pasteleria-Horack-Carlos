@@ -165,6 +165,7 @@ color: white;
     font-size: 70px;
     color: white;
 }
+/*
 footer{
     background: #FDCAE1;
     height: auto;
@@ -225,6 +226,7 @@ footer{
     opacity: .4;
     font-weight: 200;
 }
+*/
 /*Productos*/
 .titulo{
     display: flex;
