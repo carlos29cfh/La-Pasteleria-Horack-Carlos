@@ -45,38 +45,42 @@
 <div class="div__fondo">
 <h1 class="titulo__contacto">Formulario de contacto</h1>
 <main>
-    <form action="#">
-        <label for="Name"> Nombre: </label><br>
-        <input type="text" Name="Name">
-        <br>
-        <label for="Email"> Email: </label><br>
-        <input type="Email" Name="Email">
-        <br>
-        <label for="Password"> Contraseña: </label><br>
-        <input type="Password">
-        <br>
-        <label for="affair"> Asunto: </label><br>
-        <input type="affair">
-        <br>
-        <br>
-        <section class="terminos">
-            <label for="terms"> Acepta terminos y condiciones?</label>
-            <input type="checkbox" name="terms" id="checkbox">
-            <br>
-        </section>
-        <br>
-        <section class="genero">
-            <label form="radio"> Sexo </label><br>
-            <input type="radio" name="Sexo" value="h" id="genero__sex" />Hombre<input type="radio" name="Sexo" value="m" id="checkbox" />Mujer<input type="radio" name="sexo" value="o" id="checkbox" />Otro
-            <br>
-        </section>
-        <br>
-        <legend>Escriba su mensaje</legend>
-        <textarea name="Comentario"></textarea>
-        <br>
-        <input type="submit" value="Enviar" id="boton__formulario">
-        <input type="reset" value="Borrar" id="boton__formulario">
-    </form>
+  <form>
+    <!-- Name input -->
+    <div class="form-outline mb-4">
+      <input type="text" id="form4Example1" class="form-control" />
+      <label class="form-label" for="form4Example1">Name</label>
+    </div>
+  
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <input type="email" id="form4Example2" class="form-control" />
+      <label class="form-label" for="form4Example2">Email address</label>
+    </div>
+  
+    <!-- Message input -->
+    <div class="form-outline mb-4">
+      <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+      <label class="form-label" for="form4Example3">Message</label>
+    </div>
+  
+    <!-- Checkbox -->
+    <div class="form-check d-flex justify-content-center mb-4">
+      <input
+        class="form-check-input me-2"
+        type="checkbox"
+        value=""
+        id="form4Example4"
+        checked
+      />
+      <label class="form-check-label" for="form4Example4">
+        Send me a copy of this message
+      </label>
+    </div>
+  
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+  </form>
 </main>
 </div>
 <footer>

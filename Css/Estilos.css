@@ -299,7 +299,34 @@ footer{
     position: relative;
     left: 20%;
 }
-/*Quienes Somos*/
+
+.thumbnail { 
+    position: relative;
+   } 
+   .caption h2{ 
+    position: absolute; 
+    top: 10%; 
+    left: 25%;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break:break-all;
+   }
+.caption p{
+    width: 50%;
+    position: absolute; 
+    top: 20%; 
+    left: 10%;
+    font-size: 17px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break:break-all;
+}
+/*Quienes Somos
 .container__quienessomos img{
     object-fit: cover;
     display: inline-block;
@@ -321,8 +348,14 @@ footer{
     color: black;
     overflow: hidden;
 }
-
-/*Contacto*/
+form{
+    margin: 100px;
+}
+.titulo__contacto{
+    text-align: center;
+}
+*/
+/*Contacto
 .div__fondo{
     background-image: url(../Imagenes/jessica-loaiza-DHYfjAe_eeo-unsplash.jpg);
     background-repeat: no-repeat;
@@ -381,6 +414,7 @@ textarea{
 #checkbox:hover{
     cursor: pointer;
 }
+*/
 /*Responsive desing-Adapatble a dispositivos mobiles*/
 @media screen and (max-width: 1397px){
     .header__content{

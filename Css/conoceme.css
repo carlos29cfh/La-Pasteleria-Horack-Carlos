@@ -5,17 +5,20 @@ body{
 .container-fluid h1, a{
     position: absolute;
     overflow: hidden;
+
 }
 .container-fluid h1{
     color: white;
     font-size: 60px;
     bottom: 55%;
     right: 32%;
+
 }
 .container-fluid a{
     font-size: 30px;
     bottom: 40%;
     right: 38%;
+
 }
 .div__img{
     width: 100%;
