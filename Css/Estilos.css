@@ -415,6 +415,13 @@ textarea{
     cursor: pointer;
 }
 */
+form{
+    margin: 10px;
+}
+.titulo__contacto{
+    display: flex;
+    justify-content: center;
+}
 /*Responsive desing-Adapatble a dispositivos mobiles*/
 @media screen and (max-width: 1397px){
     .header__content{
