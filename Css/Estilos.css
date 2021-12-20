@@ -1,3 +1,47 @@
+/*Inicio*/
+.carousel-inner img{
+    object-fit: cover;
+}
+.main__container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: -5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden; 
+}
+.main__container:before{
+    content: "";
+    position: absolute;
+    top: 250px;
+    height: 5px;
+    width: 100%;
+    background: white;
+}
+.main__container:after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    bottom: 250px;
+    background: white;
+}
+.div__textos h2{
+    text-align: center;
+    position: absolute;
+    top: 450px;
+    right: 20%;
+    font-size: 75px;
+    color: white;
+}
+.div__textos p{
+    position: absolute;
+    top: 750px;
+    right: 28%;
+    font-size: 70px;
+    color: white;
+}
 .image{
     position: relative;
     width: 100%;
@@ -44,6 +88,29 @@
     margin-top: 0.25em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+/*@media inicio*/
+@media (max-width:768px){
+    .image__title{
+        font-size: 50px;
+    }
+}
+@media (max-width:500px){
+    .image__title{
+        font-size: 25px;
+    }
+    .image__description{
+        font-size: 25px;
+    }
+}
+@media (max-width:320px){
+    .image__title{
+        font-size: 15px;
+    }
+    .image__description{
+        font-size: 10px;
+    }
+}
+
 /*
 *{
     padding: 0;
@@ -122,49 +189,6 @@ color: white;
 }
 */
 
-.carousel-inner img{
-    object-fit: cover;
-}
-.main__container{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin-bottom: -5px;
-    display: flex;
-    align-items: center;
-    overflow: hidden; 
-}
-.main__container:before{
-    content: "";
-    position: absolute;
-    top: 250px;
-    height: 5px;
-    width: 100%;
-    background: white;
-}
-.main__container:after{
-    content: "";
-    position: absolute;
-    height: 5px;
-    width: 100%;
-    bottom: 250px;
-    background: white;
-}
-.div__textos h2{
-    text-align: center;
-    position: absolute;
-    top: 450px;
-    right: 20%;
-    font-size: 75px;
-    color: white;
-}
-.div__textos p{
-    position: absolute;
-    top: 750px;
-    right: 28%;
-    font-size: 70px;
-    color: white;
-}
 /*
 footer{
     background: #FDCAE1;
@@ -236,17 +260,36 @@ footer{
 .productos-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 300px;
     padding: 20px;
     grid-gap: 10px;
 }
+.productos__main{
+    background-color: #897766;
+}
+@media (min-width:100px){
+    .productos-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width:520px){
+    .productos-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width:728px){
+    .productos-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 .productos__item{
     position: relative;
+    
 }
 .galeria__foto{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 5px;
 }
 .nombre__foto{
     position: absolute;
@@ -259,6 +302,9 @@ footer{
 }
 
 /*Recetas*/
+.receta__main{
+    background-color: #897766;
+}
 .titulo-receta{
     display: flex;
     justify-content: center;
@@ -267,43 +313,47 @@ footer{
 }
 .cupcakes_foto{
     width: 100%;
-    height: 700px;
     object-fit: cover;
     position: relative;
     overflow: hidden;
 }
 #procedimiento{
+    width: 100%;
     display: grid;
-    grid-template-columns: 35% 50%;
-    padding-bottom: 20px;
-    overflow: hidden;  
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
 }
 .item__uno{
-    color: white;
+    color: black;
     font-size: 18px;
     display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    margin-left: 5px;
 }
 .dos p{
-    position: relative;
-    left: 50px;
-}
-.dos h2{
-    position: relative;
-    left: 45%;
+
+    background-size: 25%;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .uno ul li{
     position: relative;
-    left: 30%;
+    background-size: 20%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.uno h2{
-    position: relative;
-    left: 20%;
+@media (max-width:728px){
+    #procedimiento{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
-
+.img-responsive{
+    width: 100%;
+}
 .thumbnail { 
     position: relative;
-   } 
-   .caption h2{ 
+}
+.caption h2{ 
     position: absolute; 
     top: 10%; 
     left: 25%;
@@ -313,7 +363,7 @@ footer{
     justify-content: center;
     align-items: center;
     word-break:break-all;
-   }
+}
 .caption p{
     width: 50%;
     position: absolute; 
@@ -325,6 +375,17 @@ footer{
     justify-content: center;
     align-items: center;
     word-break:break-all;
+}
+@media (max-width:768px){
+    .caption p{
+        font-size: 10px;
+        color: white;
+    }
+}
+@media (max-width:550px){
+    .caption h2{
+        font-size: 15px;
+    }
 }
 /*Quienes Somos
 .container__quienessomos img{
@@ -415,31 +476,19 @@ textarea{
     cursor: pointer;
 }
 */
-form{
-    margin: 10px;
+/*Contacto*/
+.form__main{
+    background-image: url(../Imagenes/jessica-loaiza-DHYfjAe_eeo-unsplash.jpg);
 }
-.titulo__contacto{
-    display: flex;
-    justify-content: center;
+/*Footer*/
+.container__footer{
+    background: #FDCAE1;
+    text-align: center;
+    padding-bottom: 0%;
 }
-/*Responsive desing-Adapatble a dispositivos mobiles*/
-@media screen and (max-width: 1397px){
-    .header__content{
-        font-size: 40px;
-    }
-}
-@media screen and (max-width: 1000px){
-    .header__content{
-        font-size: 30px;
-    }
-}
-@media screen and (max-width: 390px){
-    .div__footer, .OuterFooter footer{
-        font-size: 10px;
-    }
-}
-@media screen and (max-width: 314px){
-    .div__footer, .OuterFooter footer{
-        font-size: 5px;
-    }
+.container__subfooter{
+    background: black;
+    text-align: center;
+    color: white;
+    padding-bottom: 1px;
 }

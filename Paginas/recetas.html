@@ -10,41 +10,47 @@
 </head>
 <body>
 <header>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-md navbar-light bg-light border-4 border-bottom border-primary">
-          <div class="container-fluid">
-            <div class="div__logo">
-              <a class="navbar-brand" href="../index.html">La Pastelería</a>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark border-4 border-bottom border-primary">
+      <div class="container-fluid">
+        <div class="div__logo">
+          <a class="navbar-brand" href="../index.html">La Pastelería</a>
+        </div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="Menu">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="./Inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./recetas.html">Recetas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Quienes-somos.html">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
             </div>
-              <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Menu">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-                <div class="collapse navbar-collapse" id="Menu">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link" href="./Inicio.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./Productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./recetas.html">Recetas</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./Quienes-somos.html">Quienes Somos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./Contacto.html">Contacto</a>
-                    </li>
-                  </ul>
-                </div>
-            </div>
-        </nav>
-      </div>
+        </div>
+    </nav>
+  </div>
 </header>
-    <main>
+    <main class="receta__main">
         <h1 class="titulo-receta">Cupcakes</h1>
-        <img src="../Imagenes/michaela-baum-VnM6_liIRJ0-unsplash.jpg" alt="Imagen ilustrativa de la receta" class="cupcakes_foto">
+        <div class="cupcakes_foto">
+        <img src="../Imagenes/michaela-baum-VnM6_liIRJ0-unsplash.jpg" alt="Imagen ilustrativa de la receta" width="100%">
+        </div>
         <section id="procedimiento">
             <div class="uno">    
             <h2 class="item__uno">Ingredientes: Para 3 personas</h2>
@@ -67,7 +73,7 @@
         </section>
     </main>
 <footer>
-  <div class="text-center text-white" style="background-color: #f1f1f1;">
+  <div class="container__footer">
     <div class="container pt-4">
       <!-- Section: Social media -->
         <section class="mb-4">
@@ -78,17 +84,19 @@
         <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.whatsapp.com/?lang=es" target="blank" role="button" data-mdb-ripple-color="dark"><img src="../Imagenes/whatsapp_black_logo_icon_147050.png"></a>
 
         <!-- Gmail -->
-        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.gmail.com/mail/help/intl/es/about.html?iframe" target="blank" role="button" data-mdb-ripple-color="dark"><img src="../Imagenes/1490129331-rounded07_82197.png"</a>
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.gmail.com/mail/help/intl/es/about.html?iframe" target="blank" role="button" data-mdb-ripple-color="dark"><img src="../Imagenes/1490129331-rounded07_82197.png"></a>
 
         <!-- Instagram -->
-        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/?hl=es-la" target="blank" role="button" data-mdb-ripple-color="dark"><img src="../Imagenes/instagram_black_logo_icon_147122.png"</a>
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/?hl=es-la" target="blank" role="button" data-mdb-ripple-color="dark"><img src="../Imagenes/instagram_black_logo_icon_147122.png"></a>
 
       <!-- Google Maps -->
-      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.google.com.ar/maps" target="blank" role="button" data-mdb-ripple-color="dark"><img src="../Imagenes/google_maps_icon_138521.png"</a>
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.google.com.ar/maps" target="blank" role="button" data-mdb-ripple-color="dark"><img src="../Imagenes/google_maps_icon_138521.png"></a>
       </section>
       <!-- Section: Social media -->
     </div>
-    <p>Copyright &copy; La Pastelería 2021. Todos los derechos reservados.</p>
+    <div class="container__subfooter">
+      <p>Copyright &copy; La Pastelería 2021. Todos los derechos reservados.</p>
+    </div>
 </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
