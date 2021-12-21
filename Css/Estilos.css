@@ -1,4 +1,9 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
 /*Inicio*/
+
 .carousel-inner img{
     object-fit: cover;
 }
@@ -88,7 +93,9 @@
     margin-top: 0.25em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 /*@media inicio*/
+
 @media (max-width:768px){
     .image__title{
         font-size: 50px;
@@ -111,147 +118,8 @@
     }
 }
 
-/*
-*{
-    padding: 0;
-    margin: 0;
-}
-body{
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    background: #897766;
-}
-
-.container-fluid{
-    width: 100%;
-    height: 100px;
-    padding: 0;
-    margin: 0;
-}
-
-header{
-    background-color: #FDCAE1;
-    color: black;
-    justify-items: center;
-}
-
-.ancho{
-    width: 80%;
-    height: 70px;
-    margin: auto;
-}
-.logo{
-    width: 30%;
-    height: 70px;
-    float: left;
-    padding-top: -30px;
-    box-sizing: border-box;
-}
-.logo p a{
-    color: black;
-    font-size: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, sans-serif;
-    justify-content: center;
-}
-
-nav{
-    width: 70%;
-    height: 70px;
-    float: left;
-    text-align: right;
-    padding-top: 24px;
-    box-sizing: border-box;
-}
-nav ul li{
-    display: inline;
-}
-nav ul li a{
-    color: black;
-    font-size: 13px;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding-left: 15px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-}
-
-aca resaltamos el menu navegador, cuando pase el puntero del mouse se vea en color blanco
-
-nav ul li a:hover{
-color: white;
-}
-/*@font-face{
-    font-family: Tillana;
-    src: url(../Fuentes/Tillana-Medium.ttf)
-}
-*/
-
-/*
-footer{
-    background: #FDCAE1;
-    height: auto;
-    width: 100%;
-    font-family: Tillana;
-    padding-top: 40px;
-    color: black;
-    display: flex;
-    display: inline-block;
-}
-.SocialLinks{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-.SocialLinks h3{
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-}
-.Redes{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
-}
-.Redes li{
-    margin: 0 10px;
-    display: flex;
-    text-decoration: none;
-    color: white;
-}
-.Redes li a i{
-    font-size: 1.1rem;
-    transition: color .4s ease;
-}
-.Redes li a i:hover{
-    color: aqua;
-}
-.OuterFooter{
-    background: black;
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-}
-.OuterFooter p{
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-    color: white;
-}
-.OuterFooter span{
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
-}
-*/
 /*Productos*/
+
 .titulo{
     display: flex;
     justify-content: center;
@@ -266,21 +134,7 @@ footer{
 .productos__main{
     background-color: #897766;
 }
-@media (min-width:100px){
-    .productos-container{
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-@media (min-width:520px){
-    .productos-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (min-width:728px){
-    .productos-container{
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+
 .productos__item{
     position: relative;
     
@@ -301,7 +155,26 @@ footer{
     padding: 10px;
 }
 
+/*@media Productos*/
+
+@media (min-width:100px){
+    .productos-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width:520px){
+    .productos-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width:728px){
+    .productos-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 /*Recetas*/
+
 .receta__main{
     background-color: #897766;
 }
@@ -342,6 +215,8 @@ footer{
     background-size: 20%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+/*@media Recetas*/
 @media (max-width:728px){
     #procedimiento{
         grid-template-columns: repeat(1, 1fr);
@@ -387,100 +262,15 @@ footer{
         font-size: 15px;
     }
 }
-/*Quienes Somos
-.container__quienessomos img{
-    object-fit: cover;
-    display: inline-block;
-    position: relative;
-    width: 100%;
-}
-.container__quienessomos h1{
-    position: absolute;
-    top: 20%;
-    left: 40px;
-}
-.container__quienessomos figcaption{
-    position: absolute;
-    top: 30%;
-    left: 40px;
-    font-size: 20px;
-    display: flex;
-    justify-content: left;
-    color: black;
-    overflow: hidden;
-}
-form{
-    margin: 100px;
-}
-.titulo__contacto{
-    text-align: center;
-}
-*/
-/*Contacto
-.div__fondo{
-    background-image: url(../Imagenes/jessica-loaiza-DHYfjAe_eeo-unsplash.jpg);
-    background-repeat: no-repeat;
-    overflow: hidden;
-    width: 100%;
-    object-fit: cover;
-}
-form{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #FDCAE1;
-    width: 700px;
-    margin: auto;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 15px;
-    border-radius: 10px;
-    margin-bottom: 5%;
-}
-.titulo__contacto{
-    display: flex;
-    justify-content: center;
-    color: black;
-}
-input, textarea{
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: 17px;
-}
-textarea{
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 100%;
-}
-#boton__formulario{
-    background: black;
-    color: white;
-    border-radius: 10px;
-}
-#boton__formulario:hover{
-    cursor: pointer;
-}
-.terminos{
-    display: flex;
-    text-align: center;
-}
-.genero{
-    display: flex;
-    text-align: center;
-    letter-spacing: 1px;
-}
-#checkbox:hover{
-    cursor: pointer;
-}
-#checkbox:hover{
-    cursor: pointer;
-}
-*/
+
 /*Contacto*/
+
 .form__main{
     background-image: url(../Imagenes/jessica-loaiza-DHYfjAe_eeo-unsplash.jpg);
 }
+
 /*Footer*/
+
 .container__footer{
     background: #FDCAE1;
     text-align: center;
