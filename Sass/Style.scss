@@ -1,3 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Outfit:wght@600;700;900&family=Tillana:wght@500&display=swap');
+/*Color Principal*/
+$colorbg: #897766;
+/*Fuentes*/
+$LetraPrincipal: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+$LetraSecundaria: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+
 body{
     margin: 0%;
     padding: 0%;
@@ -5,19 +13,16 @@ body{
 .ajuste{
     width: 100%;
     padding: 0px;
-
 }
 /*Inicio*/
 
 .carousel-inner img{
     object-fit: cover;
 }
-
 .image{
     position: relative;
     width: 100%;
 }
-
 .image__img{
     display: block;
     width: 100%;
@@ -53,12 +58,12 @@ body{
 .image__title{
     font-size: 100px;
     font-weight: bold;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: $LetraPrincipal;
 }
 .image__description{
     font-size: 50px;
     margin-top: 0.25em;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: $LetraPrincipal;
 }
 
 /*@media inicio*/
@@ -99,7 +104,7 @@ body{
     grid-gap: 10px;
 }
 .productos__main{
-    background-color: #897766;
+    background-color: $colorbg;
 }
 
 .productos__item{
@@ -143,7 +148,7 @@ body{
 /*Recetas*/
 
 .receta__main{
-    background-color: #897766;
+    background-color: $colorbg;
 }
 .titulo-receta{
     display: flex;
@@ -167,7 +172,7 @@ body{
     color: black;
     font-size: 18px;
     display: flex;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Oswald', sans-serif;
     padding: 10px;
     margin-left: 5px;
 }
@@ -175,12 +180,12 @@ body{
 
     background-size: 25%;
     overflow: hidden;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: $LetraPrincipal;
 }
 .uno ul li{
     position: relative;
     background-size: 20%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: $LetraPrincipal;
 }
 
 /*@media Recetas*/

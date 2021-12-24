@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Outfit:wght@600;700;900&family=Tillana:wght@500&display=swap");
+/*Color Principal*/
+/*Fuentes*/
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.ajuste {
+  width: 100%;
+  padding: 0px;
+}
+
+/*Inicio*/
+.carousel-inner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+}
+
+.image__img {
+  display: block;
+  width: 100%;
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.image__overlay > * {
+  -webkit-transform: translateY(90px);
+          transform: translateY(90px);
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+}
+
+.image__overlay:hover {
+  opacity: 1;
+}
+
+.image__overlay:hover > * {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.image__title {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.image__description {
+  font-size: 50px;
+  margin-top: 0.25em;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/*@media inicio*/
+@media (max-width: 768px) {
+  .image__title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .image__title {
+    font-size: 25px;
+  }
+  .image__description {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 320px) {
+  .image__title {
+    font-size: 15px;
+  }
+  .image__description {
+    font-size: 10px;
+  }
+}
+
+/*Productos*/
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.productos-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr, 3);
+      grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  grid-gap: 10px;
+}
+
+.productos__main {
+  background-color: #897766;
+}
+
+.productos__item {
+  position: relative;
+}
+
+.galeria__foto {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.nombre__foto {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(black));
+  background: linear-gradient(rgba(255, 255, 255, 0), black);
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+/*@media Productos*/
+@media (min-width: 100px) {
+  .productos-container {
+    -ms-grid-columns: (1fr, 1);
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 520px) {
+  .productos-container {
+    -ms-grid-columns: (1fr, 2);
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 728px) {
+  .productos-container {
+    -ms-grid-columns: (1fr, 3);
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*Recetas*/
+.receta__main {
+  background-color: #897766;
+}
+
+.titulo-receta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: perspective(0, 0, 0, 1);
+          transform: perspective(0, 0, 0, 1);
+  padding-top: 10px;
+}
+
+.cupcakes_foto {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+#procedimiento {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr, 2);
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.item__uno {
+  color: black;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Oswald", sans-serif;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+.dos p {
+  background-size: 25%;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.uno ul li {
+  position: relative;
+  background-size: 20%;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/*@media Recetas*/
+@media (max-width: 728px) {
+  #procedimiento {
+    -ms-grid-columns: (1fr, 1);
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*Quienes Somos*/
+.img-responsive {
+  width: 100%;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.caption h2 {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  font-size: 25px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  word-break: break-all;
+}
+
+.caption p {
+  width: 50%;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-size: 17px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  word-break: break-all;
+}
+
+/*@Media Quienes somos*/
+@media (max-width: 768px) {
+  .caption p {
+    font-size: 10px;
+    color: white;
+  }
+}
+
+@media (max-width: 550px) {
+  .caption h2 {
+    font-size: 15px;
+  }
+}
+
+/*Contacto*/
+.form__main {
+  background-image: url(../Imagenes/jessica-loaiza-DHYfjAe_eeo-unsplash.jpg);
+}
+
+/*Footer*/
+.container__footer {
+  background: #FDCAE1;
+  text-align: center;
+  padding-bottom: 0%;
+}
+
+.container__subfooter {
+  background: black;
+  text-align: center;
+  color: white;
+  padding-bottom: 1px;
+}
+/*# sourceMappingURL=Style.css.map */
