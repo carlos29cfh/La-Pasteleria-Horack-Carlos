@@ -1,10 +1,142 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Outfit:wght@600;700;900&family=Tillana:wght@500&display=swap');
-/*Color Principal*/
+//Color Principal
 $colorbg: #897766;
-/*Fuentes*/
+//Fuentes
 $LetraPrincipal: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 $LetraSecundaria: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+
+//Maps (En subfooter)
+
+$estilos: (
+    color: #0D0D0D,
+    centro: center
+);
+
+//Extend (Boton Conoceme)
+
+%btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: .25rem;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+    animation: pulse 1.5s infinite;
+    color: white;
+    font-size: 75px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 200px;
+}
+
+//Mixin-extend (Inicio/ image__overlay)
+
+$negro: rgba(0, 0, 0, 0.6);
+$letra: white;
+
+%imagen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+@mixin imagen($fondo, $letra){
+    @extend %imagen;
+    background: $fondo;
+    color: $letra;
+}
+
+/*Index*/
+
+.body-conoceme{
+    background-image: url(../Imagenes/dessertPaint-g846e8985f_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100px;
+}
+
+.body__container{
+display: flex;
+justify-content: center;
+} 
+
+.body__tittle h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 150px;
+    color: white;
+}
+
+.btn__conoceme{
+    @extend %btn;
+    background: linear-gradient(102deg,#4551b5 40%, #543fd7 60%);
+}
+
+/*Transformacion*/
+
+@keyframes pulse{
+    0%{
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(256, 256, 256, .1);
+    }
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 25px rgba(256, 256, 256, 0);
+    }
+    100%{
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(256, 256, 256, 0);
+    }
+}
+
+/*@Media Index*/
+
+@media (max-width:2000px) and (min-width:1281px) {
+    .body__tittle h1{
+        font-size: 80px;
+    }
+    .btn__conoceme{
+        font-size: 40px;
+        padding: 20px;
+    }
+}
+@media (max-width:1280px) and (min-width:900px) {
+    .body__tittle h1{
+        font-size: 65px;
+        margin-left: 65px;
+    }
+    .btn__conoceme{
+        font-size: 20px;
+    }
+}
+@media (max-width:899px) and (min-width:550px) {
+    .body__tittle h1{
+        font-size: 35px;
+        padding-left: 110px;
+    }
+    .btn__conoceme{
+        font-size: 10px;
+        padding: 15px;
+        margin-right: 120px;
+    }
+}
+@media (max-width:549px) and (min-width:200px) {
+    .body__tittle h1{
+        font-size: 20px;
+    }
+    .btn__conoceme{
+        font-size: 5px;
+        padding: 8px;
+        margin: -10px;
+        margin-left: 35px;
+    }
+}
 
 body{
     margin: 0%;
@@ -14,6 +146,7 @@ body{
     width: 100%;
     padding: 0px;
 }
+
 /*Inicio*/
 
 .carousel-inner img{
@@ -28,19 +161,7 @@ body{
     width: 100%;
 }
 .image__overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.25s;
+    @include imagen($negro, $letra)
 }
 .image__overlay--blur{
     backdrop-filter: blur(10px);
@@ -254,9 +375,11 @@ body{
     text-align: center;
     padding-bottom: 0%;
 }
+
 .container__subfooter{
-    background: black;
-    text-align: center;
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    padding: 1rem;
     color: white;
     padding-bottom: 1px;
 }
