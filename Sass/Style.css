@@ -12,6 +12,9 @@
   text-decoration: none;
   text-align: center;
   margin-left: 200px;
+  position: absolute;
+  top: 15%;
+  right: 45%;
 }
 
 .image__overlay {
@@ -40,25 +43,16 @@
 
 /*Index*/
 .body-conoceme {
-  background-image: url(../Imagenes/dessertPaint-g846e8985f_1920-min.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 100px;
-}
-
-.body__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: relative;
 }
 
 .body__tittle h1 {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 150px;
   color: white;
+  position: absolute;
+  top: 7%;
+  right: 40%;
 }
 
 .btn__conoceme {
@@ -389,7 +383,7 @@ body {
   position: absolute;
   top: 10%;
   left: 25%;
-  font-size: 25px;
+  font-size: 50px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
