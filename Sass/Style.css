@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Outfit:wght@600;700;900&family=Tillana:wght@500&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/*Extend (Boton Conoceme) */
 .btn__conoceme {
   display: inline-block;
   padding: 1rem 2rem;
@@ -17,6 +23,7 @@
   right: 45%;
 }
 
+/* Mixin-extend (Inicio/ image__overlay) */
 .image__overlay {
   position: absolute;
   top: 0;
@@ -56,7 +63,7 @@
 }
 
 .btn__conoceme {
-  background: linear-gradient(102deg, #4551b5 40%, #543fd7 60%);
+  background: linear-gradient(50deg, #4551b5 20%, #543fd7 80%);
 }
 
 /*Transformacion*/
@@ -64,8 +71,8 @@
   0% {
     -webkit-transform: scale(0.99);
             transform: scale(0.99);
-    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
-            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
   }
   70% {
     -webkit-transform: scale(1);
@@ -84,8 +91,8 @@
   0% {
     -webkit-transform: scale(0.99);
             transform: scale(0.99);
-    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
-            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
   }
   70% {
     -webkit-transform: scale(1);
@@ -105,6 +112,7 @@
 @media (max-width: 2000px) and (min-width: 1281px) {
   .body__tittle h1 {
     font-size: 80px;
+    right: 38%;
   }
   .btn__conoceme {
     font-size: 40px;
@@ -115,7 +123,7 @@
 @media (max-width: 1280px) and (min-width: 900px) {
   .body__tittle h1 {
     font-size: 65px;
-    margin-left: 65px;
+    right: 37%;
   }
   .btn__conoceme {
     font-size: 20px;
@@ -124,25 +132,27 @@
 
 @media (max-width: 899px) and (min-width: 550px) {
   .body__tittle h1 {
-    font-size: 35px;
-    padding-left: 110px;
+    font-size: 45px;
+    right: 38%;
   }
   .btn__conoceme {
-    font-size: 10px;
+    font-size: 20px;
     padding: 15px;
-    margin-right: 120px;
+    right: 45%;
   }
 }
 
 @media (max-width: 549px) and (min-width: 200px) {
   .body__tittle h1 {
-    font-size: 20px;
+    font-size: 35px;
+    right: 25%;
+    top: 10px;
   }
   .btn__conoceme {
-    font-size: 5px;
+    font-size: 15px;
     padding: 8px;
-    margin: -10px;
-    margin-left: 35px;
+    right: 40%;
+    top: 65px;
   }
 }
 
@@ -250,7 +260,7 @@ body {
 .productos-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
+  -ms-grid-columns: (1fr, 3);
       grid-template-columns: repeat(3, 1fr);
   padding: 20px;
   grid-gap: 10px;
@@ -286,21 +296,21 @@ body {
 /*@media Productos*/
 @media (min-width: 100px) {
   .productos-container {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: (1fr, 1);
         grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media (min-width: 520px) {
   .productos-container {
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: (1fr, 2);
         grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 728px) {
   .productos-container {
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: (1fr, 3);
         grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -334,7 +344,7 @@ body {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: (1fr, 2);
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
 }
@@ -365,7 +375,7 @@ body {
 /*@media Recetas*/
 @media (max-width: 728px) {
   #procedimiento {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: (1fr, 1);
         grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -382,51 +392,47 @@ body {
 .caption h2 {
   position: absolute;
   top: 10%;
-  left: 25%;
+  right: 40%;
   font-size: 50px;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  word-break: break-all;
 }
 
 .caption p {
   width: 50%;
   position: absolute;
-  top: 20%;
-  left: 10%;
-  font-size: 17px;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  word-break: break-all;
+  top: 15%;
+  right: 25%;
+  font-size: 20px;
+  color: white;
 }
 
 /*@Media Quienes somos*/
 @media (max-width: 768px) {
+  .caption h2 {
+    font-size: 35px;
+    right: 30%;
+    top: 60px;
+  }
   .caption p {
     font-size: 10px;
-    color: white;
   }
 }
 
 @media (max-width: 550px) {
   .caption h2 {
-    font-size: 15px;
+    font-size: 30px;
+    right: 30%;
+    top: 45px;
+  }
+}
+
+@media (max-width: 450px) {
+  .caption h2 {
+    font-size: 20px;
+    right: 30%;
+  }
+  .caption p {
+    top: 80px;
+    font-size: 9px;
   }
 }
 
