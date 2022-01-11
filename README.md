@@ -20,4 +20,5 @@ Este sitio está realizado, como proyecto final para el curso de desarrollo web 
 - Extención de Visual Studio Code: **Live Sass Compiler**
 
 ##### Licencia de uso
-MIT License
+- MIT License
+
