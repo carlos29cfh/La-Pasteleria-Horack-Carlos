@@ -344,7 +344,7 @@ body{
     top: 15%; 
     right: 25%;
     font-size: 20px;
-    color: white;
+    color: oldlace;
 }
 
 /*@Media Quienes somos*/
@@ -365,6 +365,9 @@ body{
         right: 30%;
         top: 45px;
     }
+    .caption p{
+        color: slateblue;
+    }
 }
 @media (max-width:450px){
     .caption h2{
@@ -374,6 +377,7 @@ body{
     .caption p{
         top: 80px;
         font-size: 9px;
+        color: black;
     }
 }
 
