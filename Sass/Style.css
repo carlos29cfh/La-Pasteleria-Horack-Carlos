@@ -423,9 +423,15 @@ body {
     right: 30%;
     top: 45px;
   }
+<<<<<<< HEAD
   .caption p {
     color: slateblue;
   }
+=======
+  .caption p{
+        color: slateblue;
+    }
+>>>>>>> 5c47209a869249933d4f186d9d0df4ec75b8c12e
 }
 
 @media (max-width: 450px) {
